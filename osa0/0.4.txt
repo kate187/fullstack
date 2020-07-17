@@ -1,0 +1,12 @@
+title 0.4: Posting a note
+
+selain->palvelin: HTTP post site/new_note
+palvelin-->selain: redirect notes
+selain->palvelin: site/notes
+palvelin-->selain: notes
+selain->palvelin: HTTP GET site/main.css
+palvelin-->selain: not modified
+selain->palvelin: HTTP GET site/main.js
+palvelin-->selain: not modified
+selain->palvelin: HTTP GET site/favicon.ico
+palvelin-->selain: not found
